@@ -1,0 +1,14 @@
+services:
+  spaceport:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_PATH: /app/backend/data/spaceport.db
+      CORS_ORIGINS: http://localhost:5173
+    volumes:
+      - spaceport-data:/app/backend/data
+    restart: unless-stopped
+
+volumes:
+  spaceport-data:

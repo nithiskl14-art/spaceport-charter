@@ -1,0 +1,14 @@
+.git
+.github
+.venv
+**/__pycache__
+**/*.pyc
+.pytest_cache
+backend/tests
+backend/*.db
+backend/*.db-shm
+backend/*.db-wal
+frontend/node_modules
+frontend/dist
+seed.json
+.DS_Store
