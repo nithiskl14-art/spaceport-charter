@@ -365,3 +365,19 @@ source .venv/bin/activate
 python seed.py > seed.json
 python backend/seed.py seed.json --reset
 ```
+
+## Application preview
+
+### Charter a Ship
+
+Dispatchers can select a vessel and date, review backend-calculated unavailable
+periods, and reserve a valid departure window.
+
+![Charter a Ship screen](charter-page.png)
+
+### Fleet Manager
+
+Fleet managers can inspect daily reservations across all five vessels, including
+mission times, pilot names, vessel activity, and total booking records.
+
+![Fleet Manager dashboard](fleet-manager.png)
